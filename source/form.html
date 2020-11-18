@@ -38,77 +38,63 @@
             <div class="form__wrapper">
               <div class="form__presentation">
                 <h3 class="form__title">представьтесь:</h3>
-                <div class="form__item">
-                  <label class="form__label" for="first-name">Имя*:</label>
-                  <input class="form__input" id="first-name" type="text" name="first-name" placeholder="Петр">
-                </div>
-                <div class="form__item">
-                  <label class="form__label" for="last-name">Фамилия*:</label>
-                  <input class="form__input" id="last-name" type="text" name="last-name" placeholder="Иванов">
-                </div>
-                <div class="form__item">
-                  <label class="form__label" for="patronymic">Отчество:</label>
-                  <input class="form__input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
-                </div>
+                <label class="form__label input">
+                  <span class="input__text">Имя*:</span>
+                  <input class="input__text-field" type="text" name="first-name" placeholder="Петр">
+                </label>
+                <label class="form__label input">
+                  <span class="input__text">Фамилия*:</span>
+                  <input class="input__text-field" type="text" name="last-name" placeholder="Иванов">
+                </label>
+                <label class="form__label input">
+                  <span class="input__text">Отчество:</span>
+                  <input class="input__text-field" type="text" name="patronymic" placeholder="Александрович">
+                </label>
               </div>
               <div class="form__contacts">
                 <h3 class="form__title">Контактная информация:</h3>
-                <div class="form__item">
-                  <label class="form__label" for="tel">Контактный телефон*:</label>
-                  <input class="form__input" id="tel" type="text" name="tel" placeholder="введите телефон">
-                </div>
-                <div class="form__item">
-                  <label class="form__label" for="e-mail">Электронная почта*:</label>
-                  <input class="form__input" id="e-mail" type="text" name="e-mail" placeholder="введите e-mail">
-                </div>
+                <label class="form__label input input--tel">
+                  <span class="input__text">Контактный телефон*:</span>
+                  <input class="input__text-field" type="text" name="tel" placeholder="введите телефон">
+                </label>
+                <label class="form__label input input--email">
+                  <span class="input__text">Электронная почта*:</span>
+                  <input class="input__text-field" type="text" name="e-mail" placeholder="введите e-mail">
+                </label>
               </div>
               <div class="form__impression">
                 <h3 class="form__title">Ваше общее впечатление:</h3>
-                <div class="form__item">
-                  <input class="form__radio-input" type="radio" name="impression" id="positive" checked>
-                  <label class="form__radio-label" for="positive">
-                    Скорее положительное
-                  </label>
-                </div>
-                <div class="form__item">
-                  <input class="form__radio-input" type="radio" name="impression" id="negative">
-                  <label class="form__radio-label" for="negative">
-                    Скорее отрицательное
-                  </label>
-                </div>
-                <div class="form__item">
-                  <input class="form__radio-input" type="radio" name="impression" id="dont-know">
-                  <label class="form__radio-label" for="dont-know">
-                    Затрудняюсь ответить
-                  </label>
-                </div>
+                <label class="form__radio-label choice">
+                  <input class="choice__input" type="radio" name="impression" checked>
+                  <span class="choice__text">Скорее положительное</span>
+                </label>
+                <label class="form__radio-label choice">
+                  <input class="choice__input" type="radio" name="impression">
+                  <span class="choice__text">Скорее отрицательное</span>
+                </label>
+                <label class="form__radio-label choice">
+                  <input class="choice__input" type="radio" name="impression">
+                  <span class="choice__text">Затрудняюсь ответить</span>
+                </label>
               </div>
               <div class="form__sight">
                 <h3 class="form__title">посещенные достопримечательности:</h3>
-                <div class="form__item form__item--checkbox">
-                  <input class="form__input-checkbox" type="checkbox" name="sight" id="devils-bridge" checked>
-                  <label class="form__label-checkbox" for="devils-bridge">
-                    Мост Дьявола
-                  </label>
-                </div>
-                <div class="form__item form__item--checkbox">
-                  <input class="form__input-checkbox" type="checkbox" name="sight" id="mountain-bell" checked>
-                  <label class="form__label-checkbox" for="mountain-bell">
-                    Гора-Колокол
-                  </label>
-                </div>
-                <div class="form__item form__item--checkbox">
-                  <input class="form__input-checkbox" type="checkbox" name="sight" id="slide-park" checked>
-                  <label class="form__label-checkbox" for="slide-park">
-                    Слайд-Парк
-                  </label>
-                </div>
-                <div class="form__item form__item--checkbox">
-                  <input class="form__input-checkbox" type="checkbox" name="sight" id="red-rocks">
-                  <label class="form__label-checkbox" for="red-rocks">
-                    Красные скалы
-                  </label>
-                </div>
+                <label class="form__label-checkbox choice choice--checkbox">
+                  <input class="choice__input" type="checkbox" name="sight" checked>
+                  <span class="choice__text">Мост Дьявола</span>
+                </label>
+                <label class="form__label-checkbox choice choice--checkbox">
+                  <input class="choice__input" type="checkbox" name="sight" checked>
+                  <span class="choice__text">Гора-Колокол</span>
+                </label>
+                <label class="form__label-checkbox choice choice--checkbox">
+                  <input class="choice__input" type="checkbox" name="sight" checked>
+                  <span class="choice__text">Слайд-Парк</span>
+                </label>
+                <label class="form__label-checkbox choice choice--checkbox">
+                  <input class="choice__input" type="checkbox" name="sight">
+                  <span class="choice__text">Красные скалы</span>
+                </label>
               </div>
               <div class="form__emotion">
                 <h3 class="form__title">Опишите свои эмоции:</h3>
