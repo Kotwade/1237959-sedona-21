@@ -1,0 +1,18 @@
+.site-list__item {
+  &:hover {
+    background-color: $midle-blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+  }
+}
+
+.site-list__item a {
+  color: $white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+}

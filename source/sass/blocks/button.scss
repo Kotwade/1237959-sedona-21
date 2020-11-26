@@ -1,0 +1,18 @@
+.button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: $light-blue;
+  color: $white;
+  text-decoration: none;
+  padding: 14.5px 32px 17.5px;
+  display: inline-block;
+
+  &:hover {
+    background-color: $midle-blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+  }
+}
