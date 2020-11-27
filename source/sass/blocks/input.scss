@@ -1,0 +1,35 @@
+.input__text {
+  line-height: 26px;
+  color: $dark;
+}
+
+.input__text-field {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  background-color: $light-grey;
+  border: none;
+  padding: 18px 22px 14px;
+
+  &::placeholder {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+  }
+
+  &:hover {
+    background-color: $midle-grey;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $white;
+    border: 4px solid $midle-grey;
+    outline: none;
+    padding: 14px 18px 10px;
+  }
+}
