@@ -1,14 +1,61 @@
-.reason__wrapper {
+.reason__box {
   background-color: $light-blue;
-  color: $white;
 }
 
-.reason__wrapper-grey {
-  background-color: $grey;
+.reason__container {
+  min-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.reason--bridge-container {
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.reason--bridge {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.reason__wrapper {
+  color: $white;
 }
 
 .reason__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.reason__container-grey {
+  background-color: $grey;
+}
+
+.reason__grey {
+  margin: 0 auto;
+  min-width: 320px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }

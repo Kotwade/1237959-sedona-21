@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -36,11 +37,15 @@
         <p class="description__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="reason">
-        <div class="reason__wrapper">
-          <h3 class="reason__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-          <p class="reason__number">— №1 —</p>
-          <p class="reason__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-          <img class="reason__image" src="" width="320" height="260" alt="Фотография городка">
+        <div class="reason__box">
+          <div class="reason__container">
+            <div class="reason__wrapper">
+              <h3 class="reason__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <p class="reason__number">— №1 —</p>
+              <p class="reason__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
+            <img class="reason__image" src="" width="320" height="260" alt="Фотография городка">
+        </div>
         </div>
         <div class="offer">
           <div class="offer__wrapper">
@@ -48,7 +53,7 @@
             <h3 class="offer__title">Жилье</h3>
             <p class="offer__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="offer__wrapper">
+          <div class="offer__wrapper offer--last">
             <img class="offer__image" src="" width="32" height="38">
             <h3 class="offer__title">Сувениры</h3>
             <p class="offer__text">Не только китайского, но и местного производства!</p>
@@ -59,26 +64,34 @@
             <p class="offer__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </div>
         </div>
-        <div class="reason__wrapper">
-          <h3 class="reason__title">ТАМ ЕСТЬ Мост дьявола</h3>
-          <p class="reason__number">— №2 —</p>
-          <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img class="reason__image" src="" width="320" height="260" alt="Мост дьявола">
+        <div class="reason__box">
+          <div class="reason__container reason--bridge-container">
+            <div class="reason__wrapper reason--bridge">
+              <h3 class="reason__title">ТАМ ЕСТЬ Мост дьявола</h3>
+              <p class="reason__number">— №2 —</p>
+              <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <img class="reason__image" src="" width="320" height="260" alt="Мост дьявола">
+          </div>
         </div>
-        <div class="reason__wrapper-grey">
-          <h3 class="reason__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-          <p class="reason__number">— №3 —</p>
-          <p class="reason__text">ВСЕ интересные места находятся очень близко</p>
-        </div>
-        <div class="reason__wrapper-grey">
-          <h3 class="reason__title">КРАСИВАЯ ДОРОГА</h3>
-          <p class="reason__number">— №4 —</p>
-          <p class="reason__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-        </div>
-        <div class="reason__wrapper-grey">
-          <h3 class="reason__title">МАЛО ТУРИСТОВ</h3>
-          <p class="reason__number">— №5 —</p>
-          <p class="reason__text">Большинство едет в гранд каньони толпится там</p>
+        <div class="reason__container-grey">
+          <div class="reason__grey">
+            <div class="reason__wrapper-grey">
+              <h3 class="reason__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+              <p class="reason__number">— №3 —</p>
+              <p class="reason__text">ВСЕ интересные места находятся очень близко</p>
+            </div>
+            <div class="reason__wrapper-grey">
+              <h3 class="reason__title">КРАСИВАЯ ДОРОГА</h3>
+              <p class="reason__number">— №4 —</p>
+              <p class="reason__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            </div>
+            <div class="reason__wrapper-grey">
+              <h3 class="reason__title">МАЛО ТУРИСТОВ</h3>
+              <p class="reason__number">— №5 —</p>
+              <p class="reason__text">Большинство едет в гранд каньони толпится там</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -90,23 +103,25 @@
           <a class="button" href="#">Найти гостиницу</a>
         </div>
         <img class="map" src="" width="320" height="350" alt="Седона на карте">
-        <div class="page-footer__social social">
-          <b class="social__title">#visitsedona</b>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--telegramm" href="#"><img class="social__icon" src="" width="17.5" height="14.5" alt="Телеграмм"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><img class="social__icon" src="" width="9" height="19" alt="Фейсбук"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#"><img class="social__icon" src="" width="20" height="14" alt="Ютуб"></a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__image" src="" width="27" height="34"></a>
+        <div class="page-footer__container">
+          <div class="page-footer__social social">
+            <b class="social__title">#visitsedona</b>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--telegramm" href="#"><img class="social__icon" src="" width="17.5" height="14.5" alt="Телеграмм"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#"><img class="social__icon" src="" width="9" height="19" alt="Фейсбук"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#"><img class="social__icon" src="" width="20" height="14" alt="Ютуб"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__image" src="" width="27" height="34"></a>
+          </div>
         </div>
       </div>
     </footer>
