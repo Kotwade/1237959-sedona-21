@@ -1,19 +1,11 @@
 .page-footer__wrapper {
-  min-width: 320px;
-  margin: 0 auto;
   text-align: center;
 }
 
 .page-footer__container {
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    width: 768px;
     display: flex;
     justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
   }
 }
 

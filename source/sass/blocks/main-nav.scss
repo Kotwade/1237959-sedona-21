@@ -1,16 +1,9 @@
 .main-nav__list {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
+  @include clear-list;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     display: flex;
     justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
   }
 }
 

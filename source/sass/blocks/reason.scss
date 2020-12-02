@@ -1,30 +1,20 @@
-.reason__box {
-  background-color: $light-blue;
-}
-
 .reason__container {
-  min-width: 320px;
-  margin: 0 auto;
+  background-color: $light-blue;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
 }
 
-.reason--bridge-container {
+.reason__container--bridge {
   @media (min-width: $tablet-width) {
     grid-template-columns: 2fr 1fr;
   }
 }
 
-.reason--bridge {
+.reason__wrapper--bridge {
   @media (min-width: $tablet-width) {
     order: 2;
   }
@@ -45,17 +35,10 @@
 }
 
 .reason__grey {
-  margin: 0 auto;
-  min-width: 320px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
   }
 }

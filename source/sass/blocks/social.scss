@@ -5,7 +5,7 @@
 }
 
 .social__list {
-  list-style: none;
+  @include clear-list;
   display: flex;
   justify-content: space-between;
   width: 151px;
