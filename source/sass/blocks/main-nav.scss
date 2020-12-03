@@ -1,6 +1,18 @@
 .main-nav__list {
-  background-color: $light-blue;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

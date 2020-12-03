@@ -15,4 +15,8 @@
   font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }

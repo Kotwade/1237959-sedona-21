@@ -2,17 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="" width="102" height="84" alt="Логотип">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><img src="" width="23" height="22"></button>
-        <div class="main-nav__wrapper">
+    <div class="wrapper">
+      <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="" width="102" height="84" alt="Логотип">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><img src="" width="23" height="22"></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
@@ -27,88 +28,98 @@
               <a href="#">HTML ACADEMY</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
-      <section class="description">
-        <h2 class="description__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-        <p class="description__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
-      <section class="reason">
-        <div class="reason__wrapper">
-          <h3 class="reason__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-          <p class="reason__number">— №1 —</p>
-          <p class="reason__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-          <img class="reason__image" src="" width="320" height="260" alt="Фотография городка">
-        </div>
-        <div class="offer">
-          <div class="offer__wrapper">
-            <img class="offer__image" src="" width="39" height="37">
-            <h3 class="offer__title">Жилье</h3>
-            <p class="offer__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </nav>
+      </header>
+      <main class="page-main">
+        <section class="description">
+          <h2 class="description__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="description__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </section>
+        <section class="reason">
+          <div class="reason__container">
+            <div class="reason__wrapper">
+              <h3 class="reason__title">Настоящий городок</h3>
+              <p class="reason__number">— №1 —</p>
+              <p class="reason__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img class="reason__image" src="" width="320" height="260" alt="Фотография городка">
           </div>
-          <div class="offer__wrapper">
-            <img class="offer__image" src="" width="32" height="38">
-            <h3 class="offer__title">Сувениры</h3>
-            <p class="offer__text">Не только китайского, но и местного производства!</p>
+          <div class="offer">
+            <div class="offer__wrapper">
+              <img class="offer__image" src="" width="39" height="37">
+              <h3 class="offer__title">Жилье</h3>
+              <p class="offer__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <div class="offer__wrapper offer__wrapper--last">
+              <img class="offer__image" src="" width="32" height="38">
+              <h3 class="offer__title">Сувениры</h3>
+              <p class="offer__text">Не только китайского, но и местного производства!</p>
+            </div>
+            <div class="offer__wrapper">
+              <img class="offer__image" src="" width="40" height="35">
+              <h3 class="offer__title">Еда</h3>
+              <p class="offer__text">Всегда заказывайте фирмерный бургер, Вы не разочаруетесь!</p>
+            </div>
           </div>
-          <div class="offer__wrapper">
-            <img class="offer__image" src="" width="40" height="35">
-            <h3 class="offer__title">Еда</h3>
-            <p class="offer__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          <div class="reason__container reason__container--bridge">
+            <div class="reason__wrapper reason__wrapper--bridge">
+              <h3 class="reason__title">Там есть Мост дьявола</h3>
+              <p class="reason__number">— №2 —</p>
+              <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <img class="reason__image" src="" width="320" height="260" alt="Мост дьявола">
+          </div>
+          <div class="reason__container-grey">
+            <div class="reason__grey">
+              <div class="reason__wrapper-grey">
+                <h3 class="reason__title">Небольшая площадь</h3>
+                <p class="reason__number">— №3 —</p>
+                <p class="reason__text">Все интересные места находятся очень близко</p>
+              </div>
+              <div class="reason__wrapper-grey">
+                <h3 class="reason__title">Красивая дорога</h3>
+                <p class="reason__number">— №4 —</p>
+                <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+              <div class="reason__wrapper-grey">
+                <h3 class="reason__title">Мало туристов</h3>
+                <p class="reason__number">— №5 —</p>
+                <p class="reason__text">Большинство едет в гранд каньони толпится там</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__call call">
+            <h3 class="call__title">Заинтересовались?</h3>
+            <p class="call__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a class="button" href="#">Найти гостиницу</a>
+          </div>
+          <img class="map" src="" width="320" height="350" alt="Седона на карте">
+          <div class="page-footer__container">
+            <div class="page-footer__social social">
+              <b class="social__title">#visitsedona</b>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--telegramm" href="#"><img class="social__icon" src="" width="17.5" height="14.5" alt="Телеграмм"></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#"><img class="social__icon" src="" width="9" height="19" alt="Фейсбук"></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube" href="#"><img class="social__icon" src="" width="20" height="14" alt="Ютуб"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+              <p class="copyright__text">Разработано</p>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__image" src="" width="27" height="34"></a>
+            </div>
           </div>
         </div>
-        <div class="reason__wrapper">
-          <h3 class="reason__title">ТАМ ЕСТЬ Мост дьявола</h3>
-          <p class="reason__number">— №2 —</p>
-          <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img class="reason__image" src="" width="320" height="260" alt="Мост дьявола">
-        </div>
-        <div class="reason__wrapper-grey">
-          <h3 class="reason__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-          <p class="reason__number">— №3 —</p>
-          <p class="reason__text">ВСЕ интересные места находятся очень близко</p>
-        </div>
-        <div class="reason__wrapper-grey">
-          <h3 class="reason__title">КРАСИВАЯ ДОРОГА</h3>
-          <p class="reason__number">— №4 —</p>
-          <p class="reason__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-        </div>
-        <div class="reason__wrapper-grey">
-          <h3 class="reason__title">МАЛО ТУРИСТОВ</h3>
-          <p class="reason__number">— №5 —</p>
-          <p class="reason__text">Большинство едет в гранд каньони толпится там</p>
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__call call">
-          <h3 class="call__title">Заинтересовались?</h3>
-          <p class="call__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a class="button" href="#">Найти гостиницу</a>
-        </div>
-        <img class="map" src="" width="320" height="350" alt="Седона на карте">
-        <div class="page-footer__social social">
-          <b class="social__title">#visitsedona</b>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--telegramm" href="#"><img class="social__icon" src="" width="17.5" height="14.5" alt="Телеграмм"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><img class="social__icon" src="" width="9" height="19" alt="Фейсбук"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#"><img class="social__icon" src="" width="20" height="14" alt="Ютуб"></a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__image" src="" width="27" height="34"></a>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,32 @@
+.page-footer__wrapper {
+  text-align: center;
+}
+
+.page-footer__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 414px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 571px;
+  }
+}
+
+.page-footer__copyright {
+  width: 148px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.page-header {
+  position: relative;
+  min-width: 320px;
+  background-color: $light-blue;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+  }
+}
