@@ -1,3 +1,73 @@
+.form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__impression {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    order: -3;
+    width: 50%;
+  }
+}
+
+.form__presentation {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.form__sight {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.form__emotion {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.form__end {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__checkbox-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 473px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .form__title {
   font-weight: 700;
   font-size: 18px;
@@ -32,5 +102,15 @@
     border: 4px solid $midle-grey;
     outline: none;
     padding: 9px 19px 25px 21px;
+  }
+}
+
+.form__footnote {
+  display: none;
+  line-height: 26px;
+  color: $dark;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
