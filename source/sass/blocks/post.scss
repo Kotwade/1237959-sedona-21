@@ -1,3 +1,26 @@
+.post--main {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.post--minor {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33.333%;
+  }
+}
+
+.post__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .post__title {
   font-weight: 700;
   font-size: 14px;
