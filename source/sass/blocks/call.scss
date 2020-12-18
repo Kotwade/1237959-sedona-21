@@ -2,9 +2,52 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-top: 56px;
+    margin-bottom: 33px;
+  }
 }
 
 .call__text {
   font-size: 14px;
   line-height: 24px;
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 450px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.call__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.call__button {
+  padding-left: 47px;
+  padding-right: 47px;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 136px;
+    padding-right: 136px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }

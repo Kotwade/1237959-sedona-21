@@ -1,0 +1,44 @@
+.big-logo {
+  position: relative;
+  margin-top: 55px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("/img/intro-triangle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 57px;
+    width: 100%;
+    bottom: 6px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
+}
+
+.big-logo__text {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+    top: 77px;
+  }
+}
+
+.big-logo__image {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 518px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}

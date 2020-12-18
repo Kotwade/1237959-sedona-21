@@ -1,5 +1,10 @@
 .social {
   text-align: center;
+  margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .social__title {
@@ -14,8 +19,18 @@
   justify-content: space-between;
   width: 151px;
   margin: 0 auto;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+}
+
+.social__link {
+  width: 46px;
+  height: 48px;
+  background-color: $light-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

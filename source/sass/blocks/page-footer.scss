@@ -1,11 +1,18 @@
 .page-footer__wrapper {
   text-align: center;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+  }
 }
 
 .page-footer__container {
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-top: 27px;
   }
 }
 
@@ -13,20 +20,32 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 414px;
+    align-items: center;
+    width: 399px;
+    margin-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 571px;
+    width: 556px;
+    margin-left: 119px;
   }
 }
 
 .page-footer__copyright {
-  width: 148px;
+  width: 128px;
   text-align: center;
   margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-right: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 119px;
   }
 }

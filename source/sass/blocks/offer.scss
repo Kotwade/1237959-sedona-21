@@ -1,9 +1,72 @@
 .offer {
-  text-align: center;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 158px;
+    width: 701px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1116px;
+  }
+}
+
+.offer__wrapper {
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.offer__image {
+  position: absolute;
+  left: 21px;
+  top: -10px;
+
+  @media (min-width: $tablet-width) {
+    top: -99px;
+    left: 56px;
+  }
+}
+
+.offer__image--house {
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 120px;
+  }
+}
+
+.offer__image--gift {
+  @media (min-width: $tablet-width) {
+    width: 64px;
+    height: 75px;
+    top: -101px;
+    left: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 120px;
+  }
+}
+
+.offer__image--burger {
+  left: 19px;
+  top: -5px;
+
+  @media (min-width: $tablet-width) {
+    top: -95px;
+    left: 58px;
+    width: 76px;
+    height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 120px;
   }
 }
 
@@ -17,4 +80,68 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin: 0 auto;
+  width: 240px;
+  padding-left: 58px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 185px;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 313px;
+  }
+}
+
+.offer__text {
+  width: 240px;
+  margin: 0 auto;
+  padding-left: 58px;
+  margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 282px;
+  }
+}
+
+.offer__text--burger {
+  width: 210px;
+  padding-left: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
+}
+
+.offer__text--gift {
+  @media (min-width: $tablet-width) {
+    width: 193px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 220px;
+  }
+}
+
+.offer__text--gift br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
