@@ -9,8 +9,10 @@
 
 .main-nav__toggle {
   position: absolute;
-  bottom: -50px;
-  right: 0;
+  bottom: -38px;
+  right: 14px;
+  background-color: transparent;
+  border: none;
 
   @media (min-width: $tablet-width) {
     display: none;

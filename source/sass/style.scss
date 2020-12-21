@@ -3,13 +3,13 @@
 @import "./global/variables.scss";
 @import "./global/mixin.scss";
 @import "./blocks/page.scss";
+@import "./blocks/button.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/description.scss";
 @import "./blocks/reason.scss";
 @import "./blocks/offer.scss";
 @import "./blocks/call.scss";
-@import "./blocks/button.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/form.scss";
@@ -23,3 +23,5 @@
 @import "./blocks/page-footer.scss";
 @import "./blocks/wrapper.scss";
 @import "./blocks/photo-gallery.scss";
+@import "./blocks/big-logo.scss";
+@import "./blocks/map.scss";
