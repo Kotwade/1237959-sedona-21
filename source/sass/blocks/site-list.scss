@@ -1,3 +1,22 @@
+.site-list {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icon-cross.svg");
+    background-color: transparent;
+    width: 22.2px;
+    height: 22.2px;
+    top: 17px;
+    right: 20px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
 .site-list__item {
   position: relative;
   padding-top: 10px;
@@ -6,10 +25,18 @@
 
   &:hover {
     background-color: $midle-blue;
+
+    @media (min-width: $tablet-width) {
+      background-color: $white;
+    }
   }
 
   &:active {
     background-color: $dark-blue;
+
+    @media (min-width: $tablet-width) {
+      background-color: $white;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -47,6 +74,19 @@
   font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      color: $light-blue;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
+      color: $black;
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     color: $black;

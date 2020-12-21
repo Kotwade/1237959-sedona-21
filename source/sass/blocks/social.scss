@@ -33,4 +33,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background-color: $midle-blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+  }
 }
