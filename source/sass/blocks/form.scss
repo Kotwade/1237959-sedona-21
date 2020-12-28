@@ -1,39 +1,97 @@
 .form__wrapper {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 37px;
+  }
 }
 
 .form__impression {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid $midle-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 292px;
+    top: 0;
+    right: 0;
+    background-color: $line-grey;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     order: -3;
     width: 50%;
+    align-items: center;
+    border-bottom: none;
   }
 }
 
 .form__presentation {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid $midle-grey;
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    align-items: center;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
   }
 }
 
 .form__contacts {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid $midle-grey;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-top: 44px;
+    border-bottom: none;
+  }
+}
+
+.form__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-top: 57px;
   }
 }
 
 .form__sight {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: 265px;
+  text-align: center;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
@@ -42,29 +100,50 @@
 }
 
 .form__emotion {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
 }
 
 .form__end {
+  text-align: center;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 55px;
+    margin-bottom: 64px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+    margin-bottom: 72px;
   }
 }
 
 .form__checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-bottom: 1px solid $midle-grey;
+
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 473px;
+    flex-direction: row;
+    width: 453px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 950px;
   }
 }
 
@@ -72,14 +151,70 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 24px;
+  }
+}
+
+.form__title--impression {
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
+}
+
+.form__title--presentation {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-right: 106px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 80px;
+  }
+}
+
+.form__title--checkbox {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 307px;
+    margin-top: 9px;
+    margin-bottom: 58px;
+  }
+}
+
+.form__title--contacts {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+  }
 }
 
 .form__button {
-  padding: 18.5px 33px 13.5px 32px;
+  padding: 18.5px 50px 13.5px 49px;
+  margin-top: 45px;
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: -2px;
+    padding-left: 64px;
+    padding-right: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -3px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 .form__textarea {
-  padding: 13px 23px 29px 21px;
+  padding: 13px 0 29px 21px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -87,6 +222,9 @@
   color: $black;
   background-color: $light-grey;
   border: none;
+  margin-top: 15px;
+  width: 259px;
+  height: 118px;
 
   &::placeholder {
     color: $black;
@@ -103,6 +241,17 @@
     outline: none;
     padding: 9px 19px 25px 21px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    margin-top: 31px;
+    padding-top: 18px;
+    height: 113px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .form__footnote {
@@ -112,5 +261,90 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.form__line {
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 648px;
+    height: 1px;
+    background-color: $line-grey;
+    left: 60px;
+    top: 38%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 120px;
+      width: 960px;
+      top: 30%;
+    }
+  }
+}
+
+.form__line h3 {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: inline-block;
+  }
+}
+
+.form__line--checkbox::before {
+  @media (min-width: $tablet-width) {
+    top: 30%;
+    left: -127px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -285px;
+  }
+}
+
+.form__line .form__title--checkbox {
+  @media (min-width: $tablet-width) {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+}
+
+.form__line--emotion::before {
+  @media (min-width: $tablet-width) {
+    top: 21%;
+    left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 120px;
+  }
+}
+
+.form__line .form__title--emotion {
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 77px;
+    padding-right: 77px;
   }
 }

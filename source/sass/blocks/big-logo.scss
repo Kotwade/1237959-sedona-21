@@ -32,6 +32,20 @@
   }
 }
 
+.big-logo__text--form {
+  top: 51px;
+
+  @media (min-width: $tablet-width) {
+    width: 456.9px;
+    height: 77.6px;
+    top: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 101px;
+  }
+}
+
 .big-logo__image {
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -40,5 +54,17 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+  }
+}
+
+.big-logo__image--form {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 301px;
   }
 }
