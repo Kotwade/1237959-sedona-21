@@ -1,11 +1,8 @@
 .offer {
-  margin-top: 28px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 158px;
     width: 701px;
   }
 

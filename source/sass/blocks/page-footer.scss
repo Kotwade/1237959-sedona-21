@@ -1,31 +1,30 @@
-.page-footer {
-  padding-bottom: 13px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 33px;
-  }
-}
-
 .page-footer__wrapper {
   text-align: center;
 }
 
 .page-footer__container {
+  padding-bottom: 13px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 27px;
+    padding-bottom: 33px;
   }
 }
 
 .page-footer__social {
+  text-align: center;
+  margin-top: 32px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 399px;
     margin-left: 60px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {

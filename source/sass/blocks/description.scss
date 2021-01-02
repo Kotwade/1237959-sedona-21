@@ -1,6 +1,5 @@
 .description {
   text-align: center;
-  margin-top: 27px;
 }
 
 .description__title {
@@ -9,6 +8,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     width: 520px;

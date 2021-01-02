@@ -1,6 +1,5 @@
 .big-logo {
   position: relative;
-  margin-top: 55px;
 
   &::after {
     content: "";
@@ -12,10 +11,6 @@
     width: 100%;
     bottom: 6px;
     left: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 8px;
   }
 }
 
@@ -36,8 +31,8 @@
   top: 51px;
 
   @media (min-width: $tablet-width) {
-    width: 456.9px;
-    height: 77.6px;
+    width: 457px;
+    height: 78px;
     top: 95px;
   }
 

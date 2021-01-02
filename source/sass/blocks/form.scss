@@ -12,8 +12,6 @@
 }
 
 .form__impression {
-  display: flex;
-  flex-direction: column;
   position: relative;
   margin: 0 auto;
   margin-top: 20px;
@@ -73,6 +71,10 @@
     margin-top: 44px;
     border-bottom: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 41px;
+  }
 }
 
 .form__contacts-wrapper {
@@ -106,6 +108,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-top: 24px;
   }
 }
 
@@ -118,7 +121,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 55px;
-    margin-bottom: 64px;
+    margin-bottom: 67px;
     padding: 0 60px;
   }
 
@@ -138,13 +141,46 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
-    width: 453px;
+    width: 443px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 950px;
+    width: 946px;
   }
+}
+
+.form__label {
+  margin-top: 19px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 3px;
+  }
+}
+
+.form__label-radio {
+  margin-top: 40px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 52px;
+  }
+}
+
+.form__label-checkbox {
+  margin-top: 0;
+  margin-bottom: 54px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.form__label-checkbox:last-child {
+  margin-bottom: 40px;
 }
 
 .form__title {
@@ -152,6 +188,7 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0 auto;
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -160,8 +197,15 @@
 }
 
 .form__title--impression {
+  padding-left: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    margin-bottom: 72px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 70px;
+    padding-left: 200px;
   }
 }
 
@@ -195,7 +239,7 @@
 }
 
 .form__button {
-  padding: 18.5px 50px 13.5px 49px;
+  padding: 19px 50px 13px 49px;
   margin-top: 45px;
   margin-bottom: 44px;
 
@@ -215,7 +259,7 @@
 
 .form__textarea {
   padding: 13px 0 29px 21px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -225,6 +269,7 @@
   margin-top: 15px;
   width: 259px;
   height: 118px;
+  resize: none;
 
   &::placeholder {
     color: $black;
