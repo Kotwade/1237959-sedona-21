@@ -258,17 +258,17 @@
 }
 
 .form__textarea {
-  padding: 13px 0 29px 21px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   background-color: $light-grey;
-  border: none;
+  border: 4px solid transparent;
+  padding: 9px 11px 21px 17px;
   margin-top: 15px;
-  width: 259px;
-  height: 118px;
+  width: 241px;
+  height: 120px;
   resize: none;
 
   &::placeholder {
@@ -282,20 +282,19 @@
   &:active,
   &:focus {
     background-color: $white;
-    border: 4px solid $midle-grey;
+    border-color: $midle-grey;
     outline: none;
-    padding: 9px 19px 25px 21px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 628px;
+    width: 616px;
     margin-top: 31px;
-    padding-top: 18px;
-    height: 113px;
+    padding-top: 12px;
+    height: 118px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    width: 920px;
   }
 }
 
