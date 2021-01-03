@@ -1,9 +1,11 @@
 .main-nav__list {
   @include clear-list;
+  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 8px;
   }
 }
 
@@ -17,4 +19,8 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav__toggle--form {
+  bottom: -42px;
 }

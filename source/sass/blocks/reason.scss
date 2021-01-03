@@ -14,6 +14,14 @@
   }
 }
 
+.reason__container--town {
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 158px;
+  }
+}
+
 .reason__container--bridge {
   margin-top: 35px;
 

@@ -3,4 +3,104 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  padding-left: 63px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-color: $light-grey;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -17px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1px;
+    display: none;
+  }
+}
+
+.choice__text--radio {
+  @media (min-width: $tablet-width) {
+    padding-left: 136px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 200px;
+  }
+
+  &::before {
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      left: 59px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 123px;
+    }
+  }
+
+  &::after {
+    width: 22px;
+    height: 22px;
+    background-color: $dark;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      left: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 141px;
+    }
+  }
+}
+
+.choice__text-checkbox {
+  padding-left: 70px;
+
+  &::before {
+    border-radius: 5px;
+    left: -10px;
+  }
+
+  &::after {
+    background-image: url("../img/tick.svg");
+    background-color: transparent;
+    width: 23px;
+    height: 16px;
+    left: 8px;
+  }
+}
+
+.choice__text:hover {
+  &::before {
+    background-color: $midle-grey;
+  }
+}
+
+.choice__text:active {
+  &::before {
+    background-color: $active-grey;
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.choice__input:checked + .choice__text::after {
+  display: block;
+}
+
+.choice__input:disabled + .choice__text {
+  opacity: 0.5;
 }
