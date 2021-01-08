@@ -1,15 +1,45 @@
 .intro {
   text-align: center;
+  border-bottom: 1px solid $midle-grey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .intro__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-top: 50px;
+  margin-top: 26px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-top: 57px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 94px;
+  }
 }
 
 .intro__text {
   line-height: 24px;
   color: $dark;
+  width: 290px;
+  padding-left: 18px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 458px;
+    padding-left: 0;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
 }
