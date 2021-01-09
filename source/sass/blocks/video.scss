@@ -2,13 +2,11 @@
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
-    padding-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
     height: 595px;
-    padding-left: 199px;
   }
 }
 
@@ -22,13 +20,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -145px;
-    margin-left: 60px;
+    margin-left: 0;
     margin-right: 60px;
     padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 199px;
     margin-right: 201px;
   }
 }
