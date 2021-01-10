@@ -1,0 +1,98 @@
+.video__preview {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 595px;
+  }
+}
+
+.video__controls {
+  position: relative;
+  margin-top: -51px;
+  padding-top: 45px;
+  background-color: rgba($black, 0.6);
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -145px;
+    margin-left: 0;
+    margin-right: 60px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 201px;
+  }
+}
+
+.video__scroll-bar {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 235px;
+  height: 3px;
+  background-color: rgba($white, 0.2);
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    width: 389px;
+    margin-left: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+  }
+}
+
+.video__scroll-bar span {
+  position: absolute;
+  top: -3px;
+  left: 36px;
+  width: 9px;
+  height: 9px;
+  background-color: $white;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 113px;
+  }
+}
+
+.video__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 23px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  background-color: $light-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    padding: 35px 41px 35px 35px;
+  }
+}
+
+.video__button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.video__button--subtitles {
+  margin-left: auto;
+  margin-right: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 42px;
+  }
+}
