@@ -10,7 +10,11 @@
     <div class="wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип">
+          </picture>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><img src="img/icon-menu.svg" width="23" height="22"></button>
@@ -33,7 +37,11 @@
       <main class="page-main">
         <div class="big-logo">
           <img class="big-logo__text" src="img/text-index.svg" width="282" height="214">
-          <img class="big-logo__image" src="img/back-mobile.jpg" width="320" height="389">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg 1x, img/back-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/back-tablet.jpg 1x, img/back-tablet@2x.jpg 2x">
+            <img class="big-logo__image" src="img/back-mobile.jpg"  srcset="img/back-mobile@2x.jpg 2x" width="320" height="389">
+          </picture>
         </div>
         <section class="description">
           <h2 class="description__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -46,7 +54,11 @@
               <p class="reason__number">— №1 —</p>
               <p class="reason__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="reason__image" src="img/photo-city@1x.jpg" width="320" height="260" alt="Фотография городка">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x 2x">
+              <img class="reason__image" src="img/photo-city@1x.jpg" srcset="img/photo-city@2x.jpg 2x" width="320" height="260" alt="Фотография городка">
+            </picture>
           </div>
           <div class="offer">
             <div class="offer__wrapper">
@@ -71,7 +83,11 @@
               <p class="reason__number">— №2 —</p>
               <p class="reason__text reason__text--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="reason__image" src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Мост дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x 2x">
+              <img class="reason__image" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола">
+            </picture>
           </div>
           <div class="reason__container-grey">
             <div class="reason__grey">
@@ -101,7 +117,13 @@
             <p class="call__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a class="button call__button" href="#">Найти гостиницу</a>
           </div>
-          <img class="map" src="img/map-mobile.jpg" width="320" height="350" alt="Седона на карте">
+          <div class="page-footer__map">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x 2x">
+              <img class="map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="350" alt="Седона на карте">
+            </picture>
+          </div>
           <div class="page-footer__container">
             <div class="page-footer__social social">
               <b class="social__title">#visitsedona</b>

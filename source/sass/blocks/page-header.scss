@@ -21,3 +21,10 @@
     top: 0;
   }
 }
+
+.page-header__logo-image {
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 96px;
+  }
+}
