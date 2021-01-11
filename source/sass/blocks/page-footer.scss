@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.page-footer__map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: $pin-blue;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid $white;
+    border-radius: 50%;
+  }
+}
+
 .page-footer__container {
   padding-bottom: 13px;
 
