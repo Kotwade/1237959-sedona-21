@@ -85,6 +85,25 @@
   margin: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  &:hover svg {
+    fill: $dark;
+  }
+
+  &:active svg {
+    fill: rgba($dark, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover svg {
+      fill: rgba($white, 0.6);
+    }
+
+    &:active svg {
+      fill: rgba($white, 0.3);
+    }
+  }
 }
 
 .video__button--subtitles {
@@ -93,5 +112,13 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 42px;
+  }
+}
+
+.video__icon {
+  fill: $icon-grey;
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
   }
 }

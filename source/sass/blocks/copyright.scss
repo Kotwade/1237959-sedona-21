@@ -1,3 +1,17 @@
 .copyright__text {
   line-height: 26px;
 }
+
+.copyright__link {
+  &:hover svg {
+    fill: $light-blue;
+  }
+
+  &:active svg {
+    fill: rgba($black, 0.3);
+  }
+}
+
+.copyright__icon {
+  fill: $black;
+}

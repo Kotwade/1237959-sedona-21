@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <div class="wrapper">
@@ -147,7 +147,11 @@
           </div>
           <div class="page-footer__copyright copyright">
             <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34"></a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__icon" width="27" height="34">
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>
