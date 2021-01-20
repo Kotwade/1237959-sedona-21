@@ -15,6 +15,7 @@
   position: relative;
   margin-top: 20px;
   padding-bottom: 44px;
+  width: 320px;
   border-bottom: 1px solid $midle-grey;
 
   &::before {
@@ -89,7 +90,6 @@
 .form__sight {
   display: flex;
   flex-direction: column;
-  width: 265px;
   text-align: center;
   margin-top: 15px;
 
@@ -222,7 +222,6 @@
 
 .form__title--checkbox {
   margin-bottom: 36px;
-  padding-left: 43px;
 
   @media (min-width: $tablet-width) {
     width: 307px;

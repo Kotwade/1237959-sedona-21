@@ -1,0 +1,62 @@
+.failure-popup {
+  position: absolute;
+  top: 1525px;
+  left: 0;
+  background-color: $white;
+  z-index: 2;
+  filter: drop-shadow(0 4px 4px rgba($black, 0.25));
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1430px;
+    width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1391px;
+  }
+}
+
+.failure-popup__wrapper {
+  padding: 40px 42px 35px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 47px 49px;
+  }
+}
+
+.failure-popup__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 241px;
+    padding-left: 32px;
+  }
+}
+
+.failure-popup__text {
+  line-height: 24px;
+  margin-bottom: 23px;
+  color: $dark;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.failure-popup__button {
+  font-size: 21px;
+  padding: 18px 76px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 122px 14px;
+  }
+}
