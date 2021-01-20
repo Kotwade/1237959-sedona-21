@@ -1,4 +1,6 @@
 .map {
+  border: none;
+
   @media (min-width: $tablet-width) {
     width: 768px;
   }
