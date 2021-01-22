@@ -25,7 +25,7 @@ if(popupSent != null) {
 }
 
 if(popupError != null) {
-  var ClosePopupError = popupError.querySelector("#popup-close");
+  var ClosePopupError = popupError.querySelector("#popup-failure-close");
 
   ClosePopupError.addEventListener("click", function(event) {
     event.preventDefault();

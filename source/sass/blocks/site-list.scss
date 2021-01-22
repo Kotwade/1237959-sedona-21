@@ -72,6 +72,8 @@
   color: $white;
   text-decoration: none;
   font-weight: bold;
+  padding: 16px 90px 13px;
+  width: 320px;
   font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
@@ -91,6 +93,7 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
+    padding: 0;
     font-size: 14px;
     line-height: 26px;
   }

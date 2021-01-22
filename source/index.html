@@ -11,7 +11,7 @@
   <body class="page__body">
     <div class="wrapper">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html">
+        <a class="page-header__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -19,10 +19,12 @@
           </picture>
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><img src="img/icon-menu.svg" width="23" height="22" alt="Иконка меню бургера"></button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Ионка меню бургера</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a>Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Фото и видео</a>
