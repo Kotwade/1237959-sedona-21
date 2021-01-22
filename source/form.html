@@ -19,7 +19,9 @@
           </picture>
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--form" type="button"><img src="img/icon-menu.svg" width="23" height="22" alt="Иконка меню бургера"></button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Ионка меню бургера</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
@@ -28,7 +30,7 @@
               <a href="catalog.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма Отзыва</a>
+              <a>Форма Отзыва</a>
             </li>
             <li class="site-list__item">
               <a href="#">HTML ACADEMY</a>
@@ -112,7 +114,7 @@
                     </label>
                     <label class="form__label-checkbox choice choice--checkbox">
                       <input class="choice__input visually-hidden" type="checkbox" name="sight">
-                      <span class="choice__text choice__text-checkbox">Красные скалы</span>
+                      <span class="choice__text choice__text-checkbox choice__text-checkbox--rock">Красные скалы</span>
                     </label>
                   </div>
                 </div>
@@ -132,7 +134,7 @@
               <div class="failure-popup__wrapper">
                 <h3 class="failure-popup__title">что-то пошло не так!</h3>
                 <p class="failure-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-                <button id="popup-close" class="button failure-popup__button" type="button">ок</button>
+                <button id="popup-failure-close" class="button failure-popup__button" type="button">ок</button>
               </div>
             </section>
             <section class="success-popup success-popup--open">

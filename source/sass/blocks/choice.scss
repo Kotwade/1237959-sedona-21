@@ -97,6 +97,13 @@
   }
 }
 
+.choice__text-checkbox--rock {
+  @media (min-width: $tablet-width) {
+    padding-left: 63px;
+    margin-left: 10px;
+  }
+}
+
 .choice__text:hover {
   &::before {
     background-color: $midle-grey;
