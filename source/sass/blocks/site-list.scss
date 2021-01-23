@@ -85,9 +85,10 @@
   }
 
   &:active {
+    opacity: 0.3;
+
     @media (min-width: $tablet-width) {
       color: $black;
-      opacity: 0.3;
     }
   }
 
@@ -96,5 +97,17 @@
     padding: 0;
     font-size: 14px;
     line-height: 26px;
+  }
+}
+
+.site-list__item--active a {
+  @media (min-width: $tablet-width) {
+    color: $braun;
+  }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      color: $dark-braun;
+    }
   }
 }
