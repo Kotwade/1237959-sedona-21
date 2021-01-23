@@ -16,5 +16,10 @@
 
   &:active {
     background-color: $dark-blue;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $midle-grey;
   }
 }

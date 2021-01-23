@@ -32,4 +32,8 @@
   &:active {
     background-color: $dark-blue;
   }
+
+  &:active img {
+    opacity: 0.3;
+  }
 }
